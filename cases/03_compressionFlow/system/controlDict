@@ -1,0 +1,56 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version: 13
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+
+// Solver compresible con energía
+solver          fluid;
+
+// Conversión entre tiempo y grados de cigüeñal
+userTime
+{
+    type        engine;
+    omega       600 [rpm];
+}
+
+// Inicio de la compresión: pistón en el PMI
+startFrom       startTime;
+startTime       -180;
+
+stopAt          endTime;
+
+// Primera prueba acoplada: 10 grados
+endTime         -170;
+
+// Paso temporal: 0,1 grados de cigüeñal
+deltaT          0.1;
+
+// Guardar un resultado cada 2 grados
+writeControl    runTime;
+writeInterval   2;
+
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  8;
+writeCompression off;
+
+timeFormat      general;
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep  no;
+maxCo           0.2;
+
+// ************************************************************************* //

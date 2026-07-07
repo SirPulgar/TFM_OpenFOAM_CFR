@@ -43,3 +43,7 @@ Thumbs.db
 __pycache__/
 *.pyc
 **/constant/polyMesh/
+
+# Conservar las condiciones iniciales de los casos de motor
+!**/-180/
+!**/-180/**
