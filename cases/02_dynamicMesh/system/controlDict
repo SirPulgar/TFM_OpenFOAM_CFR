@@ -31,7 +31,7 @@ startTime       -180;
 stopAt          endTime;
 
 // Primera prueba: 90 grados de compresión
-endTime         -90;
+endTime         0;
 
 deltaT          1;
 
