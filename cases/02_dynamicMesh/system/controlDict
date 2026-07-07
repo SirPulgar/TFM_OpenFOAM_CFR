@@ -1,0 +1,53 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version: 13
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+
+// Solver destinado únicamente a comprobar el movimiento de la malla
+solver          movingMesh;
+
+// El tiempo se expresa en grados de cigüeñal
+userTime
+{
+    type        engine;
+    omega       600 [rpm];
+}
+
+// -180 grados: pistón situado en el PMI
+startFrom       startTime;
+startTime       -180;
+
+stopAt          endTime;
+
+// Primera prueba: 90 grados de compresión
+endTime         -90;
+
+deltaT          1;
+
+writeControl    runTime;
+writeInterval   10;
+
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  8;
+writeCompression off;
+
+timeFormat      general;
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep  no;
+
+// ************************************************************************* //
