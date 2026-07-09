@@ -31,14 +31,14 @@ startTime       -180;
 stopAt          endTime;
 
 // Primera prueba acoplada: 10 grados
-endTime         -170;
+endTime         -90;
 
 // Paso temporal: 0,1 grados de cigüeñal
 deltaT          0.1;
 
 // Guardar un resultado cada 2 grados
 writeControl    runTime;
-writeInterval   2;
+writeInterval   10;
 
 purgeWrite      0;
 writeFormat     ascii;
