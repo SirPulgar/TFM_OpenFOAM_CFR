@@ -30,13 +30,13 @@ startTime       -180;
 
 stopAt          endTime;
 
-// Primera prueba acoplada: 10 grados
-endTime         -90;
+// Prueba completa: 0 grados
+endTime         0;
 
 // Paso temporal: 0,1 grados de cigüeñal
 deltaT          0.1;
 
-// Guardar un resultado cada 2 grados
+// Guardar un resultado cada 10 grados
 writeControl    runTime;
 writeInterval   10;
 
