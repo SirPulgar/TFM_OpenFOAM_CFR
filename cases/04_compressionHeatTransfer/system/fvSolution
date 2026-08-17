@@ -1,0 +1,84 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version: 13
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+
+solvers
+{
+    p
+    {
+        solver          PCG;
+        preconditioner  DIC;
+        tolerance       1e-7;
+        relTol          0.01;
+    }
+
+    pFinal
+    {
+        $p;
+        relTol          0;
+    }
+
+    "pcorr.*"
+    {
+        $p;
+        tolerance       1e-5;
+        relTol          0;
+    }
+
+    MeshPhi
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-2;
+        relTol          0;
+    }
+
+    "(rho|U|e)"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-7;
+        relTol          0.05;
+    }
+
+    "(rho|U|e)Final"
+    {
+        $U;
+        relTol          0;
+    }
+}
+
+PIMPLE
+{
+    momentumPredictor          yes;
+    transonic                  no;
+
+    // Corrección del flujo asociada al movimiento de la malla
+    correctMeshPhi             yes;
+
+    nOuterCorrectors           3;
+    nCorrectors                2;
+    nNonOrthogonalCorrectors   0;
+}
+
+relaxationFactors
+{
+    equations
+    {
+        ".*"    1;
+    }
+}
+
+// ************************************************************************* //
