@@ -55,7 +55,11 @@ Construir un modelo funcional que permita estudiar la compresión y expansión d
 
 ACCEDER AL PROYECTO
 
-Abrir Ubuntu/WSL y ejecutar:
+Abrir Ubuntu/WSL:
+
+wsl -d Ubuntu -u javier
+
+y ejecutar:
 
 cd ~/OpenFOAM/TFM_OpenFOAM_CFR
 
