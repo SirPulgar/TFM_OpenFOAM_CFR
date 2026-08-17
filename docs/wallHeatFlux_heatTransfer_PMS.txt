@@ -1,0 +1,72 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-18870c24d21c
+Exec   : foamPostProcess -case cases/04_compressionHeatTransfer -solver fluid -func wallHeatFlux -latestTime
+Date   : Aug 17 2026
+Time   : 20:14:25
+Host   : "MSI"
+PID    : 3431
+I/O    : uncollated
+Case   : cases/04_compressionHeatTransfer
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Selecting userTime engine
+Create mesh for time = -10
+
+--> FOAM Warning : 
+    From function virtual void Foam::wedgePolyPatch::calcGeometry(Foam::PstreamBuffers&)
+    in file meshes/polyMesh/polyPatches/constraint/wedge/wedgePolyPatch.C at line 231
+    Wedge patch 'wedgeFront' may not be sufficiently planar
+At patch face #3456 with centre (0.029380447 0.0012827779 0.1243049) the normal (-0.043619468 0.99904822 0) differs from the average normal (-0.043619383 0.99904822 6.9898361e-19) by 7.292716e-15
+
+--> FOAM Warning : 
+    From function virtual void Foam::wedgePolyPatch::calcGeometry(Foam::PstreamBuffers&)
+    in file meshes/polyMesh/polyPatches/constraint/wedge/wedgePolyPatch.C at line 231
+    Wedge patch 'wedgeBack' may not be sufficiently planar
+At patch face #3456 with centre (0.029380447 -0.0012827779 0.12430491) the normal (-0.043619468 -0.99904822 1.3979063e-17) differs from the average normal (-0.043619383 -0.99904822 -1.3979673e-18) by 7.292716e-15
+
+Selecting fvMeshMover multiValveEngine
+Setting motion for piston
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Time = -10CAD
+Selecting solver fluid
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          eConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.017702057 max: 0.20639211
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -128159.86, 9080.7842, -4.0275401, -54250.002
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -70349.561, -58294.29, -5.1498696, -69367.51
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -19519.704, -6512.3308, -0.95067995, -19184.501
+
+
+End
+
