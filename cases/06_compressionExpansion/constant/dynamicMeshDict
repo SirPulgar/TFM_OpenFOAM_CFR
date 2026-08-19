@@ -1,0 +1,54 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version: 13
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      dynamicMeshDict;
+}
+
+mover
+{
+    type    multiValveEngine;
+    libs    ("libfvMeshMoversMultiValveEngine.so");
+
+    // Pared sobre la que se desplaza el borde exterior del pistón
+    slidingPatches
+    (
+        cylinderWall
+    );
+
+    linerPatches
+    (
+        cylinderWall
+    );
+
+    piston
+    {
+        patches
+        (
+            piston
+        );
+
+        // El eje del cilindro coincide con el eje Z
+        axis    (0 0 1);
+
+        motion
+        {
+            type            crankConnectingRodMotion;
+
+            // Dimensiones reales del motor CFR, en metros
+            conRodLength    0.254;
+            stroke          0.1143;
+        }
+    }
+}
+
+// ************************************************************************* //
