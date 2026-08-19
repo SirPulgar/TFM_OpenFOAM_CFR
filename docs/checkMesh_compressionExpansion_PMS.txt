@@ -8,9 +8,9 @@
 Build  : 13-18870c24d21c
 Exec   : checkMesh -case cases/06_compressionExpansion -time 0
 Date   : Aug 19 2026
-Time   : 10:20:06
+Time   : 13:31:16
 Host   : "MSI"
-PID    : 6903
+PID    : 37639
 I/O    : uncollated
 Case   : cases/06_compressionExpansion
 nProcs : 1
@@ -84,9 +84,9 @@ Checking geometry...
     Wedge wedgeBack with angle 2.4999997 degrees
     All edges aligned with or perpendicular to non-empty directions.
     Max cell openness = 1.5018729e-16 OK.
-    Max aspect ratio = 9.6192653 OK.
-    Minimum face area = 9.5267637e-09. Maximum face area = 3.6656187e-06.  Face area magnitudes OK.
-    Min volume = 4.9105365e-12. Max volume = 3.8796908e-10.  Total volume = 9.4285269e-07.  Cell volumes OK.
+    Max aspect ratio = 9.6201744 OK.
+    Minimum face area = 9.5258635e-09. Maximum face area = 3.6656187e-06.  Face area magnitudes OK.
+    Min volume = 4.9100725e-12. Max volume = 3.8796908e-10.  Total volume = 9.4285269e-07.  Cell volumes OK.
     Mesh non-orthogonality Max: 0 average: 0
     Non-orthogonality check OK.
     Face pyramids OK.
