@@ -1,0 +1,15 @@
+--- cases/06_compressionExpansion/system/fvSchemes
++++ prueba_limitedLinear/system/fvSchemes
+@@ -35,10 +35,10 @@
+     div(phi,e)                              Gauss upwind;
+
+     // Energía cinética
+-    div(phi,K)                              Gauss linear;
++    div(phi,K)                              Gauss limitedLinear 1;
+
+     // Transporte de presión y densidad
+-    div(phi,(p|rho))                        Gauss linear;
++    div(phi,(p|rho))                        Gauss limitedLinear 1;
+
+     // Término viscoso
+     div(((rho*nuEff)*dev2(T(grad(U)))))     Gauss linear;

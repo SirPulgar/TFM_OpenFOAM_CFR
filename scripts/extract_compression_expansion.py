@@ -1,11 +1,41 @@
 from pathlib import Path
+import argparse
 import csv
+
 
 ROOT = Path(__file__).resolve().parents[1]
 
-CASE = ROOT / "cases/06_compressionExpansion/postProcessing"
+DEFAULT_CASE = ROOT / "cases/06_compressionExpansion"
+DEFAULT_OUTPUT = (
+    ROOT
+    / "docs/results/compression_expansion_CFR_walls.csv"
+)
 
-OUTPUT = ROOT / "docs/results/compression_expansion_CFR_walls.csv"
+parser = argparse.ArgumentParser(
+    description=(
+        "Extrae la temperatura y la presión medias "
+        "de un caso de compresión-expansión."
+    )
+)
+
+parser.add_argument(
+    "--case",
+    type=Path,
+    default=DEFAULT_CASE,
+    help="Ruta del caso de OpenFOAM que se analizará.",
+)
+
+parser.add_argument(
+    "--output",
+    type=Path,
+    default=DEFAULT_OUTPUT,
+    help="Archivo CSV en el que se guardarán los resultados.",
+)
+
+args = parser.parse_args()
+
+CASE = args.case.expanduser().resolve() / "postProcessing"
+OUTPUT = args.output.expanduser().resolve()
 
 
 def time_value(path: Path) -> float:
