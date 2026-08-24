@@ -1,0 +1,1139 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-18870c24d21c
+Exec   : foamPostProcess -case cases/07_compressionExpansionVariableProperties -solver fluid -func wallHeatFlux -time -180:180
+Date   : Aug 24 2026
+Time   : 23:09:19
+Host   : "MSI"
+PID    : 95471
+I/O    : uncollated
+Case   : cases/07_compressionExpansionVariableProperties
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Selecting userTime engine
+Create mesh for time = -180
+
+Selecting fvMeshMover multiValveEngine
+Setting motion for piston
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Time = -180CAD
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0 max: 0
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 13955.567, 13955.567, 1.0360664, 13955.567
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 18028.461, 18028.461, 1.3384396, 18028.461
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = 9197.8788, 9197.8788, 4.2061813, 9197.8788
+
+
+Time = -170CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.00084362642 max: 0.0015603907
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 10498.442, 11767.123, 0.86866995, 11700.776
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 13729.292, 15034.523, 1.1111027, 14966.288
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = 5300.38, 7743.8198, 3.5048784, 7705.2128
+
+
+Time = -160CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0007075215 max: 0.0015930852
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 7981.2367, 9914.9977, 0.72806398, 9806.8475
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 10588.193, 12441.644, 0.91605146, 12338.994
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = 2365.1343, 6443.0584, 2.8539662, 6376.1407
+
+
+Time = -150CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.00063493038 max: 0.002652867
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 6428.1481, 8413.4441, 0.61502697, 8284.2661
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 8430.3801, 10246.051, 0.75269621, 10138.638
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = 284.09686, 5286.9343, 2.2662969, 5203.4749
+
+
+Time = -140CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.00063202373 max: 0.0053459346
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 5635.3947, 7216.4983, 0.52534103, 7076.2179
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 6939.9845, 8402.641, 0.61680153, 8308.1689
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -1208.0924, 4246.8636, 1.7406453, 4156.5615
+
+
+Time = -130CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.00070976418 max: 0.0089788404
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 5128.3739, 6217.8916, 0.45027987, 6065.162
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 5837.4897, 6834.6603, 0.50189906, 6760.4601
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -2350.4124, 3281.9929, 1.2681014, 3190.3679
+
+
+Time = -120CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.00089406173 max: 0.013984704
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 4264.8273, 5285.6715, 0.38002112, 5118.7936
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 4916.4793, 5444.0659, 0.40023346, 5391.0488
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -3308.8268, 2360.5199, 0.84281077, 2265.9988
+
+
+Time = -110CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0012663914 max: 0.020667459
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 3090.3954, 4904.2902, 0.3046223, 4103.1895
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 3708.8107, 4132.124, 0.30391212, 4093.6235
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -4191.8753, 1441.8852, 0.45997297, 1342.6994
+
+
+Time = -100CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0017684639 max: 0.029416125
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 1608.7251, 4457.9209, 0.21435701, 2887.3377
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 2338.9871, 2986.7668, 0.20578203, 2771.8346
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -5068.6641, 460.39895, 0.11059055, 356.76227
+
+
+Time = -90CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0024341994 max: 0.040714194
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 233.89208, 3615.2119, 0.10242448, 1379.6333
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 729.76343, 1657.7913, 0.091976632, 1238.9032
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -5984.8898, -654.35718, -0.20871892, -759.07199
+
+
+Time = -80CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0033273105 max: 0.055114006
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -1266.3302, 2126.2588, 0.018475511, 248.86071
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -1368.4199, -194.39505, -0.054917943, -739.73154
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -6963.8706, -1981.5746, -0.49746806, -2085.6833
+
+
+Time = -70CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0045126791 max: 0.073441927
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -4758.8467, -450.23778, -0.12890053, -1736.2593
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -4328.465, -2919.6742, -0.26185634, -3527.1422
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -8022.0872, -3613.6814, -0.75000763, -3716.4347
+
+
+Time = -60CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0061034724 max: 0.096748282
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -9656.3636, -5500.2266, -0.48437973, -6524.4789
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -8701.3694, -7051.7758, -0.56883219, -7662.0335
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -9157.508, -5655.5499, -0.95647973, -5756.6103
+
+
+Time = -50CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0082166 max: 0.12591449
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -16309.257, -13028.509, -1.0355856, -13949.09
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -15298.658, -13390.386, -1.0343651, -13932.65
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -11175.924, -7966.4798, -1.1061239, -8321.3163
+
+
+Time = -40CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.010911939 max: 0.16003399
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -30457.241, -23058.007, -1.8136765, -24429.788
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -25302.218, -23010.876, -1.7422291, -23467.409
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -13813.282, -10465.34, -1.1910592, -11508.904
+
+
+Time = -30CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.013985425 max: 0.194078
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -56387.681, -34533.3, -2.8688976, -38643.363
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -39437.93, -36481.224, -2.758837, -37160.874
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -17286.553, -12499.255, -1.2108959, -15307.271
+
+
+Time = -20CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.016728279 max: 0.21684293
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -92260.39, -45050.979, -4.0934715, -55138.081
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -55622.866, -51912.855, -3.9491328, -53193.874
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -20974.537, -13031.514, -1.1785354, -19367.118
+
+
+Time = -10CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.017955947 max: 0.21298296
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -124995.72, -51398.615, -5.1187601, -68948.473
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -65284.236, -61026.697, -4.6968373, -63265.274
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -23961.314, -12768.423, -1.1230769, -22663.432
+
+
+Time = 0CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.017029163 max: 0.17751041
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -127735.94, -46548.966, -5.0779592, -68398.894
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -55524.184, -51687.957, -4.0391473, -54406.347
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -24664.547, -11481.033, -1.0792102, -23599.66
+
+
+Time = 10CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.015298522 max: 0.12671943
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -98649.085, -25305.8, -3.4943555, -47068.133
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -28813.394, -25956.405, -2.0960141, -28232.808
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -22246.472, -9380.7715, -1.0581953, -21354.135
+
+
+Time = 20CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.013338457 max: 0.08172231
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -53434.879, -3315.2111, -1.4278651, -19233
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = -3780.0025, -1723.7442, -0.2539648, -3420.8451
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -17680.859, -7077.9604, -1.0309611, -16941.998
+
+
+Time = 30CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.011000619 max: 0.050170442
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -19949.776, 9348.5654, -0.033195985, -447.14198
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 10181.397, 11755.388, 0.77172725, 10394.981
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -12598.043, -5060.6874, -0.94939495, -12001.565
+
+
+Time = 40CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.008690717 max: 0.039354445
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = -1291.175, 14884.224, 0.64521942, 8690.9511
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 15775.107, 16984.534, 1.1813586, 15912.618
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -7988.2998, -2904.1308, -0.77805642, -7518.1625
+
+
+Time = 50CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0066971224 max: 0.030504076
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 7149.7004, 17428.353, 0.91979324, 12389.395
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 16800.047, 17761.771, 1.2546673, 16900.068
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -4174.6394, -363.40807, -0.50663294, -3811.3748
+
+
+Time = 60CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0051118085 max: 0.024110007
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 10022.934, 17266.564, 1.0310796, 13888.395
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 15983.373, 16753.264, 1.1924278, 16061.717
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -1447.2173, 1586.7245, -0.14793699, -890.3645
+
+
+Time = 70CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0041162106 max: 0.019187977
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 11454.166, 16407.747, 1.0377635, 13978.427
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 14572.183, 15175.897, 1.086596, 14636.188
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -903.27914, 3361.6207, 0.26841034, 1330.0258
+
+
+Time = 80CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0034985691 max: 0.015397889
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 11153.519, 15201.995, 0.99444488, 13394.934
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 13075.794, 13534.088, 0.97470803, 13129.084
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -580.74743, 4624.7052, 0.70394537, 2951.3595
+
+
+Time = 90CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0030805464 max: 0.012599659
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 10159.311, 13948.641, 0.9262181, 12475.936
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 11685.042, 12020.504, 0.87083985, 11730.004
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -430.35212, 5452.9458, 1.1199499, 4073.05
+
+
+Time = 100CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0028040816 max: 0.015750781
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 9144.5529, 12739.383, 0.85513557, 11518.471
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 10456.044, 10694.917, 0.77912077, 10494.57
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -410.83936, 5916.3968, 1.4834746, 4785.6511
+
+
+Time = 110CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0026212285 max: 0.01834241
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 8317.2681, 11585.987, 0.78440917, 10565.804
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 9390.7388, 9561.5456, 0.69968047, 9424.5284
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -488.28873, 6103.8454, 1.7709034, 5169.4145
+
+
+Time = 120CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0025124972 max: 0.02037483
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 7632.5786, 10567.945, 0.7180209, 9671.5697
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 8471.9603, 8610.9232, 0.63126713, 8503.0172
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -630.19606, 6102.9341, 1.9697833, 5296.001
+
+
+Time = 130CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0024466563 max: 0.021834494
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 7033.0607, 9687.35, 0.65798321, 8862.8764
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 7677.5944, 7826.5595, 0.57225925, 7708.1951
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -809.21764, 5918.3535, 2.0785199, 5229.2689
+
+
+Time = 140CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0024080215 max: 0.022699449
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 6503.6281, 8903.3024, 0.60243057, 8114.5956
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 6985.8208, 7171.6121, 0.52098205, 7017.5036
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -1019.0053, 5601.7621, 2.1041447, 5024.5771
+
+
+Time = 150CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0023905584 max: 0.022959683
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 6013.8382, 8158.8518, 0.54981549, 7405.883
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 6376.9428, 6619.1759, 0.47594147, 6410.8177
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -1253.6563, 5198.0608, 2.0589301, 4727.3555
+
+
+Time = 160CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0023748272 max: 0.022625692
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 5540.7312, 7434.7713, 0.49936512, 6726.3287
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 5833.3253, 6148.5082, 0.43581955, 5870.385
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -1508.6677, 4849.9318, 1.956985, 4372.1653
+
+
+Time = 170CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0023630867 max: 0.021765163
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 5062.2468, 6764.2222, 0.44979817, 6058.6737
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 5339.1147, 5743.1771, 0.39943159, 5380.2479
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -1780.9679, 4597.6475, 1.811706, 3982.9
+
+
+Time = 180CAD
+wallHeatFlux wallHeatFlux:
+    processing all wall patches
+
+Selecting solver fluid
+Selecting thermodynamics package
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+No MRF models present
+
+Courant Number mean: 0.0023571619 max: 0.020388127
+Selecting thermophysical transport type laminar
+Selecting default laminar thermophysical transport model unityLewisFourier
+wallHeatFlux wallHeatFlux write:
+    writing object wallHeatFlux
+    min, max, Q [W], q [W/m^2] for patch piston = 4565.2864, 6200.4721, 0.39977955, 5384.9348
+    min, max, Q [W], q [W/m^2] for patch cylinderHead = 4879.3146, 5387.5012, 0.365663, 4925.3931
+    min, max, Q [W], q [W/m^2] for patch cylinderWall = -2070.8451, 4322.7225, 1.6342334, 3573.6644
+
+
+End
