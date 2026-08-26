@@ -1,0 +1,6757 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-18870c24d21c
+Exec   : foamPostProcess -case cases/08_compressionExpansionCombustion -time -180:180 -funcs (volAverage(T) cellMax(T) volAverage(p))
+Date   : Aug 26 2026
+Time   : 23:18:43
+Host   : "MSI"
+PID    : 129795
+I/O    : uncollated
+Case   : cases/08_compressionExpansionCombustion
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Selecting userTime engine
+Create mesh for time = -180
+
+Selecting fvMeshMover multiValveEngine
+Setting motion for piston
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4285269e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4285269e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4285269e-06
+    operation = volAverage
+
+Time = -180CAD
+
+Reading fields:
+    volScalarFields: T p
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 300
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 300 at location (0.00068726192 -6.6933969e-22 0.00052916667) in cell 0
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 101325
+
+
+Time = -170CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3784671e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3784671e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3784671e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 302.84902
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 355.66559 at location (0.040722443 -3.5508509e-20 0.12647364) in cell 4799
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 102795.48
+
+
+Time = -160CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.2285711e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.2285711e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.2285711e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 306.77275
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 397.21474 at location (0.040722443 1.0574849e-19 0.12648205) in cell 4799
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 105736.86
+
+
+Time = -150CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.9798043e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.9798043e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.9798043e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 311.80383
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 426.4155 at location (0.040722443 7.5251514e-20 0.12649602) in cell 4799
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 110356.15
+
+
+Time = -140CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.6341505e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.6341505e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.6341505e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 318.07494
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 447.20855 at location (0.040722443 -6.1914058e-22 0.12651541) in cell 4799
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 116998.98
+
+
+Time = -130CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.1951471e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.1951471e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.1951471e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 325.80497
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 463.04744 at location (0.040722443 -4.0546074e-20 0.12654005) in cell 4799
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 126196.52
+
+
+Time = -120CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.6685619e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.6685619e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.6685619e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 335.29117
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 476.29109 at location (0.040722443 8.7713015e-20 0.12656961) in cell 4799
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 138746.6
+
+
+Time = -110CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.0631277e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.0631277e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.0631277e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 346.91997
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 491.3599 at location (0.039691607 -6.1892531e-22 0.12660359) in cell 4798
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 155849.62
+
+
+Time = -100CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.3912031e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.3912031e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.3912031e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 361.18626
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 505.96266 at location (0.039691607 -6.1892531e-22 0.1266413) in cell 4798
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 179333.75
+
+
+Time = -90CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.669208e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.669208e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.669208e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 378.71628
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 519.95887 at location (0.039691607 -6.1892531e-22 0.12668182) in cell 4798
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 212037.23
+
+
+Time = -80CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.9176812e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.9176812e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.9176812e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 400.30722
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 533.98826 at location (0.039691607 -6.1892531e-22 0.126724) in cell 4798
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 258475.35
+
+
+Time = -70CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.1608562e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.1608562e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.1608562e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 426.96582
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 548.50133 at location (0.039691607 -6.1892531e-22 0.12676647) in cell 4798
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 325985.55
+
+
+Time = -60CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.4257248e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.4257248e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.4257248e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 459.85118
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 563.61789 at location (0.039691607 -2.8112166e-20 0.12680774) in cell 4798
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 426647.25
+
+
+Time = -50CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.7406609e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.7406609e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.7406609e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 500.193
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 583.72536 at location (0.040722443 -6.1914058e-22 0.12653855) in cell 4759
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 580369.09
+
+
+Time = -40CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.133747e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.133747e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.133747e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 548.9122
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 624.1386 at location (0.032475853 6.1703612e-22 0.099576237) in cell 231
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 818407.35
+
+
+Time = -30CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.6309948e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.6309948e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.6309948e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 605.36037
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 678.29952 at location (0.032475853 6.1703612e-22 0.10677011) in cell 391
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1181100.4
+
+
+Time = -20CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.2546459e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.2546459e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.2546459e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 664.52369
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 736.21097 at location (0.032475853 3.6074203e-21 0.11200144) in cell 551
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1685444.6
+
+
+Time = -19CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.2246699e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.2246699e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.2246699e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 670.15888
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 741.95862 at location (0.032475853 2.4546639e-20 0.11249725) in cell 591
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1741300.5
+
+
+Time = -18CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1961475e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1961475e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1961475e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 675.68148
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 747.46304 at location (0.033506662 -6.173558e-22 0.11283503) in cell 592
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1797480.7
+
+
+Time = -17CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1690906e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1690906e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1690906e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 681.06613
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 752.88321 at location (0.033506662 -6.173558e-22 0.11315543) in cell 592
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1853696.6
+
+
+Time = -16CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1435133e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1435133e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1435133e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 686.2916
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 758.10926 at location (0.032475853 6.1703612e-22 0.11358669) in cell 631
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1909655.2
+
+
+Time = -15CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1194252e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1194252e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1194252e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 691.33652
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 763.31301 at location (0.033506662 -6.173558e-22 0.11386923) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1965035.2
+
+
+Time = -14CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0968398e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0968398e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0968398e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 696.17829
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 768.31418 at location (0.033506662 9.5998846e-20 0.11413416) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2019487.9
+
+
+Time = -13CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.075766e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.075766e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.075766e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 700.79455
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 773.06325 at location (0.033506662 -2.9702657e-20 0.11438136) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2072640.3
+
+
+Time = -12CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0562133e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0562133e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0562133e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 705.17348
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 777.54416 at location (0.033506662 2.2912583e-20 0.1146107) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2124131.9
+
+
+Time = -11CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0381922e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0381922e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0381922e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 709.42796
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 781.87772 at location (0.033506662 -6.173558e-22 0.11482209) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2173970.2
+
+
+Time = -10CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0217093e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0217093e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0217093e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 713.90271
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 786.42949 at location (0.033506662 -6.173558e-22 0.11501543) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2222898.4
+
+
+Time = -9CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0067736e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0067736e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0067736e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 719.18083
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 791.80394 at location (0.033506662 7.6429909e-20 0.11519063) in cell 632
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2272473.4
+
+
+Time = -8CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.9339108e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.9339108e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.9339108e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 726.08052
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 798.9338 at location (0.032475853 -2.5196922e-20 0.11557062) in cell 711
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2325094.1
+
+
+Time = -7CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.8156904e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.8156904e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.8156904e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 735.64346
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 809.09899 at location (0.032475853 2.9732982e-20 0.11570664) in cell 711
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2383993.4
+
+
+Time = -6CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.7131125e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.7131125e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.7131125e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 749.11616
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 823.50433 at location (0.032475853 8.2810789e-20 0.11582465) in cell 711
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2453178.5
+
+
+Time = -5CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.6262438e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.6262438e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.6262438e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 767.91538
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 843.71956 at location (0.032475853 1.1316012e-19 0.11603265) in cell 751
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2537301.8
+
+
+Time = -4CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.5551067e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.5551067e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.5551067e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 793.57861
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 871.42671 at location (0.032475853 -2.9210141e-20 0.1161137) in cell 751
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2641450
+
+
+Time = -3CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4997531e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4997531e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4997531e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 827.69487
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 908.24763 at location (0.032475853 3.0602773e-20 0.11617677) in cell 751
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2770849.8
+
+
+Time = -2CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4601904e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4601904e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4601904e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 871.824
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 955.82486 at location (0.032475853 1.1502664e-19 0.11622184) in cell 751
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2930510.4
+
+
+Time = -1CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4364483e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4364483e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4364483e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 927.41646
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1015.7028 at location (0.032475853 3.0783727e-20 0.1162489) in cell 751
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3124864.5
+
+
+Time = -9.57852e-14CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4285269e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4285269e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4285269e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 995.76524
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1089.2414 at location (0.032475853 1.4558528e-19 0.11625792) in cell 751
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3357515.7
+
+
+Time = 1CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4364483e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4364483e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4364483e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1077.9387
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1177.6678 at location (0.032475853 1.3948895e-19 0.11614298) in cell 711
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3630953.6
+
+
+Time = 2CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4601904e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4601904e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4601904e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1174.5621
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1281.449 at location (0.032475853 3.6074203e-21 0.11611565) in cell 711
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3945761.8
+
+
+Time = 3CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4997531e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4997531e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4997531e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1285.792
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1400.6326 at location (0.032475853 3.0602773e-20 0.11607014) in cell 711
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4300536.3
+
+
+Time = 4CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.5551067e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.5551067e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.5551067e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1411.271
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1535.407 at location (0.031445049 -6.1433462e-21 0.1163282) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4691788.5
+
+
+Time = 5CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.6262438e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.6262438e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.6262438e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1550.0866
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1685.2617 at location (0.031445049 -6.1166332e-20 0.11624876) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5113922.2
+
+
+Time = 6CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.7131125e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.7131125e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.7131125e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1700.7477
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 1847.9137 at location (0.031445049 -3.341008e-20 0.11615173) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5559301.1
+
+
+Time = 7CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.8156904e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.8156904e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.8156904e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1861.178
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2021.078 at location (0.031445049 -6.1433462e-21 0.11603717) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6018436.6
+
+
+Time = 8CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.9339108e-07
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.9339108e-07
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.9339108e-07
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2028.7362
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2201.846 at location (0.031445049 -6.1433462e-21 0.11590513) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6480283.8
+
+
+Time = 9CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0067736e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0067736e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0067736e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2200.2637
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2386.756 at location (0.031445049 -6.1433462e-21 0.11575567) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6932662
+
+
+Time = 10CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0217093e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0217093e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0217093e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2372.1858
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2571.8771 at location (0.031445049 -6.1433462e-21 0.11558885) in cell 830
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7362810.4
+
+
+Time = 11CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0381922e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0381922e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0381922e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2540.6577
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2753.3011 at location (0.031445049 -3.7634532e-20 0.11528824) in cell 790
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7758075.8
+
+
+Time = 12CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0562133e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0562133e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0562133e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2701.7719
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2926.7001 at location (0.031445049 -6.1433462e-21 0.11508493) in cell 790
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8106698.1
+
+
+Time = 13CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.075766e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.075766e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.075766e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2851.7936
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3087.819 at location (0.031445049 -5.5383792e-20 0.11486436) in cell 790
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8398624.4
+
+
+Time = 14CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.0968398e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.0968398e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.0968398e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2987.4257
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3233.0307 at location (0.031445049 -3.3281288e-20 0.11462663) in cell 790
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8626254.6
+
+
+Time = 15CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1194252e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1194252e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1194252e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3106.0502
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3359.6403 at location (0.031445049 4.4166544e-20 0.11424619) in cell 750
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8785010.9
+
+
+Time = 16CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1435133e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1435133e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1435133e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3205.9159
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3466.961 at location (0.030414252 7.4831585e-20 0.11448519) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8873638.2
+
+
+Time = 17CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1690906e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1690906e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1690906e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3286.2546
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3554.8317 at location (0.030414252 4.6843983e-20 0.11420526) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8894182.2
+
+
+Time = 18CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.1961475e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.1961475e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.1961475e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3347.2773
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3621.8464 at location (0.030414252 0 0.11390916) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8851643.3
+
+
+Time = 19CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.2246699e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.2246699e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.2246699e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3390.0929
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3669.1364 at location (0.030414252 2.5347765e-20 0.11359699) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8753357.7
+
+
+Time = 20CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.2546459e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.2546459e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.2546459e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3416.5228
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3698.6307 at location (0.030414252 1.1211583e-19 0.11326893) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8608201.6
+
+
+Time = 21CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.2860615e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.2860615e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.2860615e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3428.869
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3712.8 at location (0.030414252 6.9852937e-20 0.11292512) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8425733.7
+
+
+Time = 22CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.3189017e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.3189017e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.3189017e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3429.6606
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3714.359 at location (0.030414252 2.3751353e-20 0.11256571) in cell 909
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 8215396.1
+
+
+Time = 23CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.3531517e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.3531517e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.3531517e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3421.4094
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3706.0816 at location (0.030414252 4.0472288e-20 0.11203898) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7985865.3
+
+
+Time = 24CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.3887968e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.3887968e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.3887968e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3406.4231
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3690.4797 at location (0.030414252 1.0455606e-19 0.11164487) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7744616.1
+
+
+Time = 25CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.4258197e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.4258197e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.4258197e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3386.679
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3669.6276 at location (0.030414252 7.6817693e-20 0.11123553) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7497708.8
+
+
+Time = 26CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.4642035e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.4642035e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.4642035e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3363.7615
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3645.2356 at location (0.030414252 5.6102481e-20 0.11081114) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7249778.2
+
+
+Time = 27CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.5039317e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.5039317e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.5039317e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3338.7143
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3618.4389 at location (0.030414252 -2.9889379e-21 0.11037189) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 7003853.6
+
+
+Time = 28CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.5449851e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.5449851e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.5449851e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3311.2335
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3588.9191 at location (0.030414252 7.3880201e-20 0.10991798) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6759878
+
+
+Time = 29CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.587346e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.587346e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.587346e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3283.9147
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3559.4905 at location (0.030414252 0 0.10944963) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6523552.3
+
+
+Time = 30CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.6309948e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.6309948e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.6309948e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3256.7902
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3530.2011 at location (0.030414252 6.7150973e-20 0.10896702) in cell 869
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6294982.6
+
+
+Time = 31CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.6759125e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.6759125e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.6759125e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3230.9058
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3492.4229 at location (0.030414252 -3.2679474e-20 0.10828228) in cell 829
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 6081331.8
+
+
+Time = 32CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.7220781e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.7220781e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.7220781e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3204.1623
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3463.0481 at location (0.030414252 -3.4790986e-20 0.10776667) in cell 829
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5867970.4
+
+
+Time = 33CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.7694709e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.7694709e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.7694709e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3177.7005
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3434.7492 at location (0.029383461 2.7803265e-20 0.1076346) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5662370.5
+
+
+Time = 34CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.8180702e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.8180702e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.8180702e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3151.5388
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3407.7462 at location (0.029383461 -3.5413639e-20 0.10710273) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5464437.5
+
+
+Time = 35CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.8678535e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.8678535e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.8678535e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3125.6935
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3380.9975 at location (0.029383461 -3.4582294e-20 0.10655788) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5274044.3
+
+
+Time = 36CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.9187995e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.9187995e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.9187995e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3100.1777
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3354.522 at location (0.029383461 2.5310334e-20 0.10600032) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 5091037.1
+
+
+Time = 37CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 1.9708851e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 1.9708851e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 1.9708851e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3075.0036
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3328.3371 at location (0.029383461 -3.5984508e-20 0.10543028) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4915241
+
+
+Time = 38CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.0240875e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.0240875e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.0240875e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3050.1808
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3302.4581 at location (0.029383461 -4.2329755e-21 0.10484803) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4746464.4
+
+
+Time = 39CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.0783827e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.0783827e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.0783827e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3025.7181
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3276.8991 at location (0.029383461 -3.1508204e-20 0.10425381) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4584502.8
+
+
+Time = 40CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.133747e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.133747e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.133747e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 3001.6218
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3251.672 at location (0.029383461 1.0801534e-19 0.1036479) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4429142.9
+
+
+Time = 41CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.1901561e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.1901561e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.1901561e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2977.8969
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3226.7874 at location (0.029383461 -4.2329755e-21 0.10303055) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4280164.6
+
+
+Time = 42CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.2475852e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.2475852e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.2475852e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2954.5469
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3202.2542 at location (0.029383461 -4.2329755e-21 0.10240203) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4137344.7
+
+
+Time = 43CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.3060092e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.3060092e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.3060092e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2931.5745
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3178.0799 at location (0.029383461 -6.2363192e-20 0.10176263) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 4000458
+
+
+Time = 44CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.3654028e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.3654028e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.3654028e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2908.9812
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3154.2706 at location (0.029383461 9.760467e-20 0.10111262) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3869280
+
+
+Time = 45CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.4257401e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.4257401e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.4257401e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2886.7669
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3130.8312 at location (0.029383461 4.5494094e-20 0.10045227) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3743587.7
+
+
+Time = 46CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.4869952e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.4869952e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.4869952e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2864.9318
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3107.7655 at location (0.029383461 -2.7027227e-20 0.099781885) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3623161.3
+
+
+Time = 47CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.5491416e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.5491416e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.5491416e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2843.4741
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3085.076 at location (0.029383461 1.5017473e-20 0.099101745) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3507784.6
+
+
+Time = 48CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.6121527e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.6121527e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.6121527e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2822.3922
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3062.7645 at location (0.029383461 -1.2448371e-21 0.098412141) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3397246.6
+
+
+Time = 49CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.6760015e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.6760015e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.6760015e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2801.6833
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3040.8315 at location (0.029383461 -4.6601539e-20 0.097713368) in cell 908
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3291342.1
+
+
+Time = 50CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.7406609e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.7406609e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.7406609e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2781.3448
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 3019.2779 at location (0.029383461 -2.4915155e-20 0.096698084) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3189871.6
+
+
+Time = 51CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.8061035e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.8061035e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.8061035e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2761.3727
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2998.1039 at location (0.029383461 -1.3140844e-19 0.095974522) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 3092641.9
+
+
+Time = 52CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.8723018e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.8723018e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.8723018e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2741.7637
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2977.3059 at location (0.029383461 -6.6424098e-20 0.095242606) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2999466.5
+
+
+Time = 53CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 2.9392278e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 2.9392278e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 2.9392278e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2722.5136
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2956.8815 at location (0.029383461 -1.83774e-19 0.094502643) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2910165.7
+
+
+Time = 54CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.0068538e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.0068538e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.0068538e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2703.6176
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2936.8278 at location (0.029383461 -1.2448371e-21 0.09375494) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2824566.5
+
+
+Time = 55CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.0751516e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.0751516e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.0751516e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2685.0712
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2917.1415 at location (0.029383461 -4.2329755e-21 0.092999811) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2742502.7
+
+
+Time = 56CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.1440929e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.1440929e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.1440929e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2666.8697
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2897.8188 at location (0.029383461 6.788047e-20 0.092237567) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2663815.2
+
+
+Time = 57CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.2136494e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.2136494e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.2136494e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2649.0079
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2878.8559 at location (0.029383461 -4.2329755e-21 0.091468521) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2588351.1
+
+
+Time = 58CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.2837926e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.2837926e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.2837926e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2631.4805
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2860.2483 at location (0.029383461 -1.1078956e-19 0.090692988) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2515964.3
+
+
+Time = 59CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.3544939e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.3544939e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.3544939e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2614.2825
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2841.9915 at location (0.029383461 -4.2329755e-21 0.089911284) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2446515.3
+
+
+Time = 60CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.4257248e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.4257248e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.4257248e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2597.4083
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2824.0809 at location (0.029383461 -4.2329755e-21 0.089123724) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2379870.4
+
+
+Time = 61CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.4974566e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.4974566e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.4974566e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2580.8529
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2806.5113 at location (0.029383461 -3.9634906e-20 0.088330628) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2315902.5
+
+
+Time = 62CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.5696606e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.5696606e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.5696606e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2564.6106
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2789.2779 at location (0.029383461 -4.2329755e-21 0.087532309) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2254489.9
+
+
+Time = 63CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.6423082e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.6423082e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.6423082e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2548.6758
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2772.3753 at location (0.029383461 2.689179e-20 0.086729086) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2195516.9
+
+
+Time = 64CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.7153706e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.7153706e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.7153706e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2533.0433
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2755.7982 at location (0.029383461 -3.7733794e-20 0.085921277) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2138873
+
+
+Time = 65CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.7888192e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.7888192e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.7888192e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2517.7078
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2739.5414 at location (0.029383461 -3.4154155e-20 0.085109198) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2084452.9
+
+
+Time = 66CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.8626254e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.8626254e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.8626254e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2502.6637
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2723.5995 at location (0.029383461 -4.2329755e-21 0.084293165) in cell 868
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 2032156.6
+
+
+Time = 67CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 3.9367606e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 3.9367606e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 3.9367606e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2487.9059
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2708.1904 at location (0.028352678 6.3290628e-20 0.083473494) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1981888.7
+
+
+Time = 68CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.0111964e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.0111964e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.0111964e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2473.4289
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2693.1739 at location (0.028352678 6.2182858e-20 0.082650501) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1933558.4
+
+
+Time = 69CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.0859043e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.0859043e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.0859043e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2459.2276
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2678.4401 at location (0.028352678 6.1111822e-20 0.081824498) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1887079.2
+
+
+Time = 70CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.1608562e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.1608562e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.1608562e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2445.2968
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2663.9839 at location (0.028352678 6.1552502e-22 0.080995798) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1842369.1
+
+
+Time = 71CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.2360238e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.2360238e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.2360238e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2431.6313
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2649.8006 at location (0.028352678 8.6809241e-20 0.080164713) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1799349.6
+
+
+Time = 72CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.3113791e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.3113791e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.3113791e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2418.2264
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2635.8853 at location (0.028352678 5.8104243e-20 0.079331551) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1757946.5
+
+
+Time = 73CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.3868945e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.3868945e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.3868945e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2405.0768
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2622.2334 at location (0.028352678 5.7166075e-20 0.078496622) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1718088.8
+
+
+Time = 74CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.462542e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.462542e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.462542e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2392.1778
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2608.84 at location (0.028352678 -5.5027136e-20 0.07766023) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1679709.3
+
+
+Time = 75CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.5382944e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.5382944e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.5382944e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2379.5246
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2595.7005 at location (0.028352678 6.1552502e-22 0.07682268) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1642743.7
+
+
+Time = 76CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.6141242e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.6141242e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.6141242e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2367.1125
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2582.8104 at location (0.028352678 -2.4847208e-20 0.075984273) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1607131.2
+
+
+Time = 77CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.6900046e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.6900046e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.6900046e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2354.9368
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2570.1651 at location (0.028352678 6.1552502e-22 0.075145308) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1572813.7
+
+
+Time = 78CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.7659085e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.7659085e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.7659085e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2342.993
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2557.7601 at location (0.028352678 6.1552502e-22 0.074306081) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1539735.9
+
+
+Time = 79CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.8418095e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.8418095e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.8418095e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2331.2767
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2545.5909 at location (0.028352678 6.1552502e-22 0.073466887) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1507845.3
+
+
+Time = 80CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.9176812e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.9176812e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.9176812e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2319.7835
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2533.6534 at location (0.028352678 6.1552502e-22 0.072628017) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1477091.8
+
+
+Time = 81CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 4.9934977e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 4.9934977e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 4.9934977e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2308.5091
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2521.9431 at location (0.028352678 -2.3717556e-21 0.071789758) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1447427.9
+
+
+Time = 82CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.0692331e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.0692331e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.0692331e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2297.4493
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2510.4559 at location (0.028352678 2.3792207e-20 0.070952396) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1418808.1
+
+
+Time = 83CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.1448619e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.1448619e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.1448619e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2286.5999
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2499.1877 at location (0.028352678 -2.3717556e-21 0.070116211) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1391189.4
+
+
+Time = 84CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.2203589e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.2203589e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.2203589e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2275.9571
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2488.1343 at location (0.028352678 6.1552502e-22 0.069281483) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1364530.5
+
+
+Time = 85CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.2956995e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.2956995e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.2956995e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2265.5168
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2477.2917 at location (0.028352678 -1.1628686e-19 0.068448486) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1338792.2
+
+
+Time = 86CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.370859e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.370859e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.370859e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2255.2751
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2466.656 at location (0.028352678 6.1552502e-22 0.06761749) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1313937.4
+
+
+Time = 87CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.4458133e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.4458133e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.4458133e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2245.2283
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2456.2233 at location (0.028352678 -6.4106565e-20 0.066788764) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1289930.3
+
+
+Time = 88CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.5205384e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.5205384e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.5205384e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2235.3727
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2445.99 at location (0.028352678 -2.3717556e-21 0.065962571) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1266737.1
+
+
+Time = 89CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.595011e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.595011e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.595011e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2225.7047
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2435.9523 at location (0.028352678 -4.138197e-20 0.065139171) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1244325.5
+
+
+Time = 90CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.669208e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.669208e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.669208e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2216.2208
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2426.1067 at location (0.028352678 6.1552502e-22 0.064318817) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1222664.7
+
+
+Time = 91CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.7431064e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.7431064e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.7431064e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2206.9174
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2416.4498 at location (0.028352678 6.1552502e-22 0.063501764) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1201725.1
+
+
+Time = 92CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.8166841e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.8166841e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.8166841e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2197.7913
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2406.978 at location (0.028352678 6.4198201e-20 0.062688257) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1181478.9
+
+
+Time = 93CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.8899192e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.8899192e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.8899192e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2188.8391
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2397.6882 at location (0.028352678 6.3444772e-20 0.06187854) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1161899.2
+
+
+Time = 94CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 5.9627897e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 5.9627897e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 5.9627897e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2180.0576
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2388.577 at location (0.028352678 2.0319109e-20 0.061072852) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1142960.5
+
+
+Time = 95CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.0352747e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.0352747e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.0352747e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2171.4437
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2379.6413 at location (0.028352678 -1.8851412e-20 0.060271426) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1124638.5
+
+
+Time = 96CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.1073535e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.1073535e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.1073535e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2162.9942
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2370.878 at location (0.028352678 6.1552502e-22 0.059474493) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1106909.8
+
+
+Time = 97CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.1790054e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.1790054e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.1790054e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2154.7063
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2362.284 at location (0.028352678 -1.8398581e-20 0.058682279) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1089752.2
+
+
+Time = 98CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.2502106e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.2502106e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.2502106e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2146.5768
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2353.8563 at location (0.028352678 5.9995211e-20 0.057895004) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1073144.5
+
+
+Time = 99CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.3209496e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.3209496e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.3209496e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2138.6031
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2345.5921 at location (0.028352678 -3.9545956e-20 0.057112884) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1057066.4
+
+
+Time = 100CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.3912031e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.3912031e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.3912031e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2130.7822
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2337.4884 at location (0.028352678 6.1552502e-22 0.05633613) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1041498.5
+
+
+Time = 101CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.4609525e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.4609525e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.4609525e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2123.1115
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2329.5426 at location (0.028352678 7.9327453e-20 0.055564951) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1026422.4
+
+
+Time = 102CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.5301794e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.5301794e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.5301794e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2115.5883
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2321.7518 at location (0.028352678 6.1552502e-22 0.05479955) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 1011820.2
+
+
+Time = 103CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.5988659e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.5988659e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.5988659e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2108.21
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2314.1135 at location (0.028352678 -7.358901e-20 0.054040122) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 997675
+
+
+Time = 104CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.6669947e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.6669947e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.6669947e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2100.974
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2306.625 at location (0.028352678 5.6469923e-20 0.053286862) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 983970.67
+
+
+Time = 105CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.7345485e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.7345485e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.7345485e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2093.8778
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2299.2837 at location (0.028352678 6.1552502e-22 0.052539958) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 970691.64
+
+
+Time = 106CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.8015109e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.8015109e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.8015109e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2086.919
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2292.0873 at location (0.028352678 6.1552502e-22 0.051799594) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 957823.08
+
+
+Time = 107CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.8678655e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.8678655e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.8678655e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2080.0952
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2285.0332 at location (0.028352678 6.1552502e-22 0.051065947) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 945350.78
+
+
+Time = 108CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.9335967e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.9335967e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.9335967e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2073.404
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2278.1192 at location (0.028352678 6.1552502e-22 0.050339196) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 933261.14
+
+
+Time = 109CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 6.9986891e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 6.9986891e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 6.9986891e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2066.8433
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2271.3429 at location (0.028352678 6.1552502e-22 0.049619507) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 921541.16
+
+
+Time = 110CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.0631277e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.0631277e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.0631277e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2060.4106
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2264.7019 at location (0.028352678 6.1552502e-22 0.048907045) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 910178.35
+
+
+Time = 111CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.126898e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.126898e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.126898e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2054.104
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2258.1942 at location (0.028352678 -6.8312445e-20 0.048201974) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 899160.78
+
+
+Time = 112CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.1899859e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.1899859e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.1899859e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2047.9213
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2251.8175 at location (0.028352678 -3.5052847e-20 0.047504447) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 888477
+
+
+Time = 113CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.2523777e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.2523777e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.2523777e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2041.8603
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2245.5697 at location (0.028352678 -1.7034598e-19 0.046814617) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 878116.05
+
+
+Time = 114CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.3140601e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.3140601e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.3140601e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2035.9192
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2239.4487 at location (0.028352678 -3.4498418e-20 0.046132631) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 868067.41
+
+
+Time = 115CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.3750201e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.3750201e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.3750201e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2030.096
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2233.4526 at location (0.028352678 -3.4232874e-20 0.04545863) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 858321
+
+
+Time = 116CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.4352454e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.4352454e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.4352454e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2024.3885
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2227.5793 at location (0.028352678 -9.7180966e-20 0.044792754) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 848867.16
+
+
+Time = 117CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.4947236e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.4947236e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.4947236e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2018.7951
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2221.827 at location (0.028352678 6.1552502e-22 0.044135136) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 839696.62
+
+
+Time = 118CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.5534434e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.5534434e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.5534434e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2013.3139
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2216.1937 at location (0.028352678 6.5819845e-20 0.043485907) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 830800.51
+
+
+Time = 119CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.6113931e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.6113931e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.6113931e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2007.9431
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2210.6777 at location (0.028352678 6.1552502e-22 0.042845189) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 822170.28
+
+
+Time = 120CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.6685619e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.6685619e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.6685619e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 2002.6809
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2205.2771 at location (0.028352678 3.1257045e-20 0.042213107) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 813797.76
+
+
+Time = 121CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.7249392e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.7249392e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.7249392e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1997.5256
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2199.9901 at location (0.028352678 3.1033411e-20 0.041589775) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 805675.12
+
+
+Time = 122CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.7805147e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.7805147e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.7805147e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1992.4755
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2194.8152 at location (0.028352678 6.1552502e-22 0.040975308) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 797794.81
+
+
+Time = 123CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.8352787e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.8352787e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.8352787e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1987.5291
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2189.7505 at location (0.028352678 6.1552502e-22 0.040369814) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 790149.59
+
+
+Time = 124CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.8892216e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.8892216e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.8892216e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1982.6848
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2184.7945 at location (0.028352678 6.018446e-20 0.039773398) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 782732.54
+
+
+Time = 125CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.9423343e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.9423343e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.9423343e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1977.941
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2179.9456 at location (0.028352678 -3.1957054e-20 0.039186162) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 775536.98
+
+
+Time = 126CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 7.994608e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 7.994608e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 7.994608e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1973.2962
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2175.2022 at location (0.028352678 6.1552502e-22 0.038608202) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 768556.52
+
+
+Time = 127CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.046034e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.046034e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.046034e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1968.749
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2170.5628 at location (0.028352678 -2.3717556e-21 0.038039613) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 761785
+
+
+Time = 128CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.0966044e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.0966044e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.0966044e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1964.2978
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2166.026 at location (0.028352678 2.963711e-20 0.037480486) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 755216.53
+
+
+Time = 129CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.1463113e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.1463113e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.1463113e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1959.9413
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2161.5903 at location (0.028352678 2.9460056e-20 0.036930905) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 748845.43
+
+
+Time = 130CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.1951471e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.1951471e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.1951471e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1955.6783
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2157.2543 at location (0.028352678 6.1552502e-22 0.036390956) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 742666.27
+
+
+Time = 131CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.2431046e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.2431046e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.2431046e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1951.5072
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2153.0167 at location (0.028352678 6.1552502e-22 0.035860717) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 736673.8
+
+
+Time = 132CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.290177e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.290177e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.290177e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1947.4269
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2148.876 at location (0.028352678 6.1552502e-22 0.035340266) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 730863.02
+
+
+Time = 133CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.3363575e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.3363575e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.3363575e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1943.4361
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2144.8311 at location (0.028352678 6.1552502e-22 0.034829674) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 725229.1
+
+
+Time = 134CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.3816398e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.3816398e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.3816398e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1939.5336
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2140.8806 at location (0.028352678 -8.9462981e-20 0.034329012) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 719767.43
+
+
+Time = 135CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.426018e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.426018e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.426018e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1935.7182
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2137.0234 at location (0.028352678 -1.1391971e-19 0.033838349) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 714473.53
+
+
+Time = 136CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.469486e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.469486e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.469486e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1931.9888
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2133.2581 at location (0.028352678 6.1552502e-22 0.033357748) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 709343.15
+
+
+Time = 137CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.5120384e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.5120384e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.5120384e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1928.3442
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2129.5837 at location (0.028352678 5.8813223e-20 0.03288727) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 704372.18
+
+
+Time = 138CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.5536701e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.5536701e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.5536701e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1924.7834
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2125.999 at location (0.028352678 3.1073612e-20 0.032426973) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 699556.67
+
+
+Time = 139CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.5943757e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.5943757e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.5943757e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1921.3054
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2122.5029 at location (0.028352678 6.1552502e-22 0.031976914) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 694892.85
+
+
+Time = 140CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.6341505e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.6341505e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.6341505e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1917.9089
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2119.0943 at location (0.028352678 6.1552502e-22 0.031537146) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 690377.09
+
+
+Time = 141CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.6729901e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.6729901e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.6729901e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1914.5932
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2115.772 at location (0.028352678 2.770841e-20 0.03110772) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 686005.88
+
+
+Time = 142CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.71089e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.71089e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.71089e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1911.3571
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2112.5348 at location (0.028352678 -2.6359497e-20 0.030688682) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 681775.9
+
+
+Time = 143CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.747846e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.747846e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.747846e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1908.1998
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2109.3818 at location (0.028352678 5.7324909e-20 0.030280081) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 677683.91
+
+
+Time = 144CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.7838543e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.7838543e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.7838543e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1905.1205
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2106.3121 at location (0.028352678 6.1552502e-22 0.029881958) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 673726.85
+
+
+Time = 145CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.818911e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.818911e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.818911e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1902.118
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2103.3248 at location (0.028352678 6.1552502e-22 0.029494356) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 669901.75
+
+
+Time = 146CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.8530127e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.8530127e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.8530127e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1899.1917
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2100.419 at location (0.028352678 5.6686769e-20 0.029117313) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 666205.78
+
+
+Time = 147CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.8861559e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.8861559e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.8861559e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1896.3406
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2097.5939 at location (0.028352678 -1.1113093e-19 0.028750867) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 662636.22
+
+
+Time = 148CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.9183376e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.9183376e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.9183376e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1893.5641
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2094.8486 at location (0.028352678 5.3310668e-20 0.028395053) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 659190.46
+
+
+Time = 149CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.9495547e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.9495547e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.9495547e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1890.8611
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2092.1825 at location (0.028352678 -2.8627406e-20 0.028049905) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 655866
+
+
+Time = 150CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 8.9798043e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 8.9798043e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 8.9798043e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1888.2311
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2089.5946 at location (0.028352678 6.1552502e-22 0.027715452) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 652660.43
+
+
+Time = 151CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.0090837e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.0090837e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.0090837e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1885.6732
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2087.0844 at location (0.028352678 5.2779876e-20 0.027391725) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 649571.46
+
+
+Time = 152CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.0373905e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.0373905e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.0373905e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1883.1867
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2084.651 at location (0.028352678 2.9603277e-20 0.027078754) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 646596.9
+
+
+Time = 153CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.0647223e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.0647223e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.0647223e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1880.7711
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2082.2938 at location (0.028352678 2.6537605e-20 0.026776562) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 643734.66
+
+
+Time = 154CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.0910768e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.0910768e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.0910768e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1878.4255
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2080.0121 at location (0.028352678 5.2309415e-20 0.026485176) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 640982.74
+
+
+Time = 155CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.1164518e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.1164518e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.1164518e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1876.1493
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2077.8053 at location (0.028352678 -2.5159465e-20 0.026204618) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 638339.22
+
+
+Time = 156CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.1408455e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.1408455e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.1408455e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1873.9421
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2075.6726 at location (0.028352678 -2.5090664e-20 0.02593491) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 635802.27
+
+
+Time = 157CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.164256e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.164256e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.164256e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1871.8031
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2073.6136 at location (0.028352678 6.1552502e-22 0.025676074) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 633370.16
+
+
+Time = 158CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.1866815e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.1866815e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.1866815e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1869.7318
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2071.6276 at location (0.028352678 -2.4962415e-20 0.025428129) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 631041.23
+
+
+Time = 159CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.2081204e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.2081204e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.2081204e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1867.7277
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2069.7141 at location (0.028352678 6.1552502e-22 0.025191091) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 628813.9
+
+
+Time = 160CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.2285711e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.2285711e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.2285711e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1865.7902
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2067.8726 at location (0.028352678 6.1552502e-22 0.024964979) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 626686.67
+
+
+Time = 161CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.2480324e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.2480324e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.2480324e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1863.9189
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2066.1025 at location (0.028352678 8.281479e-20 0.024749807) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 624658.14
+
+
+Time = 162CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.2665028e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.2665028e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.2665028e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1862.1133
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2064.4034 at location (0.028352678 6.1552502e-22 0.02454559) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 622726.94
+
+
+Time = 163CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.2839811e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.2839811e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.2839811e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1860.3729
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2062.7748 at location (0.028352678 3.6028056e-21 0.024352342) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 620891.82
+
+
+Time = 164CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3004663e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3004663e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3004663e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1858.6973
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2061.2161 at location (0.028352678 -2.4649489e-20 0.024170075) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 619151.59
+
+
+Time = 165CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3159572e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3159572e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3159572e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1857.0862
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2059.7271 at location (0.028352678 8.2259092e-20 0.023998801) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 617505.12
+
+
+Time = 166CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3304529e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3304529e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3304529e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1855.5389
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2058.3073 at location (0.028352678 6.1552502e-22 0.02383853) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 615951.36
+
+
+Time = 167CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3439525e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3439525e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3439525e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1854.0553
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2056.9562 at location (0.028352678 2.5762948e-20 0.023689273) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 614489.31
+
+
+Time = 168CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3564552e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3564552e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3564552e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1852.635
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2055.6736 at location (0.028352678 -2.4498307e-20 0.023551038) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 613118.05
+
+
+Time = 169CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3679603e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3679603e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3679603e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1851.2776
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2054.4591 at location (0.028352678 1.06922e-19 0.023423833) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 611836.73
+
+
+Time = 170CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3784671e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3784671e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3784671e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1849.9829
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2053.3123 at location (0.028352678 6.1552502e-22 0.023307665) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 610644.54
+
+
+Time = 171CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.387975e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.387975e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.387975e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1848.7505
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2052.233 at location (0.028352678 -2.4413995e-20 0.023202542) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 609540.75
+
+
+Time = 172CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.3964834e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.3964834e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.3964834e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1847.5803
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2051.2209 at location (0.028352678 6.1552502e-22 0.023108469) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 608524.69
+
+
+Time = 173CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.403992e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.403992e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.403992e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1846.472
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2050.2758 at location (0.028352678 6.1552502e-22 0.023025452) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 607595.76
+
+
+Time = 174CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4105002e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4105002e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4105002e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1845.4254
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2049.3973 at location (0.028352678 5.6529286e-20 0.022953493) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 606753.39
+
+
+Time = 175CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4160077e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4160077e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4160077e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1844.4403
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2048.5853 at location (0.028352678 -2.4339452e-20 0.0228926) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 605997.1
+
+
+Time = 176CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4205143e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4205143e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4205143e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1843.5166
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2047.8396 at location (0.028352678 -2.4327535e-20 0.022842773) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 605326.46
+
+
+Time = 177CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4240197e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4240197e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4240197e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1842.6541
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2047.1599 at location (0.028352678 -2.1330965e-20 0.022804016) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 604741.11
+
+
+Time = 178CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4265236e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4265236e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4265236e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1841.8527
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2046.5462 at location (0.028352678 6.1552502e-22 0.022776332) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 604240.72
+
+
+Time = 179CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4280261e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4280261e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4280261e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1841.1119
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2045.9982 at location (0.028352678 1.3120605e-19 0.02275972) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 603825.06
+
+
+Time = 180CAD
+volFieldValue volAverage(T) read:
+    number of cells = 4800
+    volume = 9.4285269e-06
+    operation = volAverage
+
+volFieldValue cellMax(T) read:
+    number of cells = 4800
+    volume = 9.4285269e-06
+    operation = max
+
+volFieldValue volAverage(p) read:
+    number of cells = 4800
+    volume = 9.4285269e-06
+    operation = volAverage
+
+
+Reading fields:
+    volScalarFields: p T
+
+Executing functionObjects
+volFieldValue volAverage(T) write:
+    volAverage(all) of T = 1840.4317
+
+volFieldValue cellMax(T) write:
+    max(all) of T = 2045.516 at location (0.028352678 -4.9228223e-20 0.022754183) in cell 867
+
+volFieldValue volAverage(p) write:
+    volAverage(all) of p = 603493.9
+
+
+End
+
