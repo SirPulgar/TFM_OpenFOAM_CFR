@@ -1,0 +1,78 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version: 13
+    \\  /    A nd           |
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      physicalProperties;
+}
+
+thermoType
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          janaf;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+// Propiedades del oxidante empleadas en el tutorial oficial:
+// XiFluid/kivaTest/constant/physicalProperties
+//
+// Esta representación del aire es válida entre 200 y 6000 K.
+// Se mantiene el modelo pureMixture porque la combustión se representa
+// mediante una liberación de calor homogénea basada en una ley de Wiebe.
+mixture
+{
+    specie
+    {
+        nMoles         1;
+        molWeight      28.8504;
+    }
+
+    thermodynamics
+    {
+        Tlow           200;
+        Thigh          6000;
+        Tcommon        1000;
+
+        highCpCoeffs
+        (
+            3.10205
+            0.00123963
+            -4.17512e-07
+            6.60292e-11
+            -3.87448e-15
+            -985.517
+            5.35187
+        );
+
+        lowCpCoeffs
+        (
+            3.58378
+            -0.0007269
+            1.66985e-06
+            -1.08452e-10
+            -4.31951e-13
+            -1050.53
+            3.11223
+        );
+    }
+
+    transport
+    {
+        As             1.67212e-06;
+        Ts             170.672;
+    }
+}
+
+// ************************************************************************* //

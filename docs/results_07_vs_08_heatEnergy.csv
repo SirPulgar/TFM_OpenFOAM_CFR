@@ -1,0 +1,3 @@
+domain,delta_E_piston_J,delta_E_cylinderHead_J,delta_E_cylinderWall_J,delta_E_total_J,Qcombustion_J,heatLoss_fraction_percent
+wedge5deg,0.97599,0.827831,1.36425,3.16807,32.6054,9.71638
+fullCylinder,70.2713,59.6038,98.226,228.101,2347.59,9.71638
