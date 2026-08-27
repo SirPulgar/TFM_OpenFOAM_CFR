@@ -22,7 +22,7 @@ userTime
     omega           600 [ rpm];
 }
 
-startFrom       latestTime;
+startFrom       startTime;
 
 startTime       -180;
 
@@ -51,8 +51,6 @@ timePrecision   6;
 runTimeModifiable true;
 
 adjustTimeStep  no;
-
-maxCo           0.2;
 
 
 // ************************************************************************* //
